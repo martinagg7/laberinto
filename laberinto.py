@@ -5,12 +5,13 @@ def laberintof():
         fila=[]
         for j in range(5):
             tupla=(i,j)
-            if tupla in muro:
+            if tupla in muro:#comprueba si la tupla esta en la lista de muros
                 fila.append("x")
             else:
                 fila.append(' ')
         laberinto.append(fila)
     return laberinto
+##BLOQUE PRINCIPAL####
 if __name__=="__main__":
     for i in range(5):
         print(laberintof()[i])
